@@ -1,1 +1,1 @@
-# auafit-propuesta
+# AUAFIT
