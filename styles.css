@@ -528,77 +528,37 @@ html[lang="en"] .es{display:none!important}
 }
 @media(max-width:900px){.ing-grid{grid-template-columns:1fr;max-width:540px;margin:0 auto}}
 
-/* ══════════ SPLIT FESTIVAL — Asymmetric ══════════ */
-.split-festival{
-  display:grid;grid-template-columns:58% 42%;
-  min-height:90vh;overflow:hidden
+/* ══════════ FESTIVAL — Full-photo premium features ══════════ */
+.festival-p{
+  font-size:clamp(16px,1.7vw,19px)!important;
+  max-width:580px;margin-bottom:40px;line-height:1.8
 }
-.sf-image-pane{position:relative;overflow:hidden}
-.sf-image-pane img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform 9s ease
+.fest-features{
+  display:flex;flex-wrap:wrap;gap:10px;
+  max-width:640px
 }
-.split-festival:hover .sf-image-pane img{transform:scale(1.04)}
-.sf-img-ov{
-  position:absolute;inset:0;
-  background:linear-gradient(to right,rgba(0,8,28,.12) 0%,rgba(0,8,28,.60) 100%)
-}
-.sf-img-label{
-  position:absolute;bottom:36px;left:36px;
-  font-family:'Montserrat',sans-serif;
-  font-size:.58rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
-  color:rgba(255,255,255,.28)
-}
-.sf-text-pane{
-  background:var(--navy);
-  display:flex;align-items:center;
-  border-left:1px solid rgba(255,255,255,.06)
-}
-.sf-content{
-  padding:80px 56px;
-  display:flex;flex-direction:column;justify-content:center;
-  height:100%
-}
-.sf-content .chip{margin-bottom:22px}
-.festival-h{
-  font-size:clamp(2.8rem,5.5vw,4.8rem)!important;
-  line-height:.95!important;margin-bottom:28px!important
-}
-.sf-content .wt-soft{
-  font-size:clamp(15px,1.4vw,17px);
-  line-height:1.8;margin-bottom:40px;
-  color:rgba(255,255,255,.60)
-}
-.sf-features{
-  list-style:none;
-  border-top:1px solid rgba(255,255,255,.08)
-}
-.sf-features li{
-  display:flex;align-items:center;gap:14px;
-  padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06);
-  font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:600;
+.fest-feat{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  padding:10px 18px;border-radius:50px;
+  font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:600;
   letter-spacing:.07em;text-transform:uppercase;
-  color:rgba(255,255,255,.48);
-  transition:color .25s,padding-left .25s
+  color:rgba(255,255,255,.80);
+  transition:background .25s,border-color .25s,color .25s,transform .25s
 }
-.sf-features li:hover{color:rgba(255,255,255,.88);padding-left:4px}
-.sf-feat-icon{
+.fest-feat:hover{
+  background:rgba(0,139,210,.22);
+  border-color:rgba(0,139,210,.50);
+  color:#fff;transform:translateY(-2px)
+}
+.fest-feat-icon{
   display:flex;align-items:center;justify-content:center;
-  width:30px;height:30px;flex-shrink:0;
-  background:rgba(0,139,210,.10);
-  border:1px solid rgba(0,139,210,.18);
-  border-radius:8px;transition:background .25s,border-color .25s
+  width:18px;height:18px;flex-shrink:0
 }
-.sf-features li:hover .sf-feat-icon{
-  background:rgba(0,139,210,.22);border-color:rgba(0,139,210,.40)
-}
-.sf-feat-icon svg{
+.fest-feat-icon svg{
   width:14px;height:14px;
-  color:var(--blue-light);stroke-width:1.5
+  color:var(--blue-light);stroke-width:1.8
 }
-@media(max-width:900px){
-  .split-festival{grid-template-columns:1fr}
-  .sf-image-pane{min-height:52vh}
-  .sf-content{padding:52px 32px}
-  .festival-h{font-size:clamp(2.4rem,8vw,3.5rem)!important}
-}
+.fest-feat:hover .fest-feat-icon svg{color:#fff}
