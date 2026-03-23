@@ -422,8 +422,9 @@ html[lang="en"] .es{display:none!important}
 
 /* ══════════ HOTEL ══════════ */
 .hotel-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.hotel-photo{border-radius:var(--rx);overflow:hidden;box-shadow:var(--shl);position:sticky;top:100px}
-.hotel-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+/* Apple floating — neutralizamos bordes/shadow del hotel-photo para que photo-apple tome el control */
+.hotel-photo{position:sticky;top:100px;border-radius:0;overflow:visible;box-shadow:none}
+.hotel-photo img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:center 30%}
 .hotel-reasons{display:flex;flex-direction:column}
 .reason{display:flex;gap:20px;align-items:flex-start;padding:24px 0;border-bottom:1px solid var(--slate-200)}
 .reason:last-child{border-bottom:none}
