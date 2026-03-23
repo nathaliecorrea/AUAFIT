@@ -147,7 +147,7 @@ html[lang="en"] .es{display:none!important}
 .hero-auafit-logo{margin-bottom:24px;display:flex;justify-content:center}
 .hero-brand-logo{height:clamp(44px,6vw,72px);width:auto;margin:0 auto;display:block}
 /* Logo AquaBOARD — blanco sobre oscuro + tamaño Apple-scale */
-.hero-aquaboard-logo{height:clamp(90px,15vw,200px);width:auto;display:block;margin:0 auto .2em;filter:brightness(2.8) drop-shadow(0 2px 12px rgba(0,0,0,.5))}
+.hero-aquaboard-logo{height:clamp(100px,16vw,240px);width:auto;display:block;margin:0 auto .2em;filter:brightness(2.2) drop-shadow(0 2px 8px rgba(0,0,0,.4))}
 .hero-title-sub{display:block;font-weight:900;color:#fff;letter-spacing:2px}
 .hero-pill{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.25);backdrop-filter:blur(8px);padding:11px 24px;border-radius:50px;font-family:'Montserrat',sans-serif;font-size:clamp(.76rem,1.5vw,.94rem);font-weight:600;color:#fff;margin-bottom:32px}
 .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--blue);flex-shrink:0;box-shadow:0 0 0 3px rgba(0,139,210,.3);animation:pulse 2.2s ease-in-out infinite}
