@@ -98,7 +98,7 @@ html[lang="en"] .es{display:none!important}
   font-size:clamp(2rem,4.5vw,3.4rem);
   font-weight:700;color:var(--navy);line-height:1.12;letter-spacing:-.025em
 }
-.sec-header h2 em{color:var(--blue);font-style:normal}
+.sec-header h2 em{color:var(--navy);font-style:normal}
 .sec-lead{margin-top:16px;font-size:1.05rem;color:var(--muted);max-width:560px;margin-left:auto;margin-right:auto;line-height:1.8}
 
 /* ── White text helpers ── */
@@ -114,13 +114,13 @@ html[lang="en"] .es{display:none!important}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;transition:background .3s,box-shadow .3s,padding .3s}
 .nav.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 2px 20px rgba(0,61,124,.1);padding:9px 0}
 .nav-inner{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.nav-logo img{height:36px;width:auto;transition:opacity .25s}
-/* Logo blanco (negativo) visible sobre hero oscuro */
-.nav-logo .logo-white{display:block}
-.nav-logo .logo-color{display:none}
-/* Logo color visible sobre nav blanco */
-.nav.solid .nav-logo .logo-white{display:none}
-.nav.solid .nav-logo .logo-color{display:block}
+.nav-logo img{height:44px;width:auto;transition:opacity .25s}
+/* Hero (nav transparente): logo color — AUA azul + FIT caja cyan */
+.nav-logo .logo-color{display:block}
+.nav-logo .logo-white{display:none}
+/* Nav sólido (scroll): logo negativo blanco */
+.nav.solid .nav-logo .logo-color{display:none}
+.nav.solid .nav-logo .logo-white{display:block}
 .nav-links{display:flex;gap:24px;align-items:center}
 .nav-links a{font-family:'Montserrat',sans-serif;font-size:.74rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
 .nav.solid .nav-links a{color:var(--navy)}
@@ -141,9 +141,13 @@ html[lang="en"] .es{display:none!important}
 .hero-logo img{height:52px;width:auto;margin:0 auto;filter:brightness(0) invert(1)}
 .hero-for{font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:6px}
 .hero-hotel{font-size:clamp(1rem,2vw,1.3rem);font-weight:300;color:rgba(255,255,255,.82);margin-bottom:18px;letter-spacing:.02em}
-.hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(2.8rem,8vw,6.5rem);font-weight:900;line-height:.95;color:#fff;letter-spacing:-.03em;margin-bottom:32px}
-.hero-title em{display:block;color:var(--blue);font-style:normal}
-.hero-aquaboard-logo{height:clamp(60px,10vw,110px);width:auto;display:block;margin:0 auto .2em}
+.hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(3.2rem,9vw,7.5rem);font-weight:900;line-height:.92;color:#fff;letter-spacing:-.035em;margin-bottom:36px}
+.hero-title em{display:block;color:#fff;font-style:normal}
+/* Logo AUAFIT en hero body — color con pill semitransparente */
+.hero-auafit-logo{margin-bottom:32px}
+.hero-brand-logo{height:clamp(48px,7vw,80px);width:auto;margin:0 auto;background:rgba(255,255,255,.92);padding:10px 20px;border-radius:50px;backdrop-filter:blur(8px)}
+/* Logo AquaBOARD — protagonista del título */
+.hero-aquaboard-logo{height:clamp(80px,14vw,180px);width:auto;display:block;margin:0 auto .18em}
 .hero-title-sub{display:block;font-weight:900;color:#fff}
 .hero-pill{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.25);backdrop-filter:blur(8px);padding:11px 24px;border-radius:50px;font-family:'Montserrat',sans-serif;font-size:clamp(.76rem,1.5vw,.94rem);font-weight:600;color:#fff;margin-bottom:32px}
 .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--blue);flex-shrink:0;box-shadow:0 0 0 3px rgba(0,139,210,.3);animation:pulse 2.2s ease-in-out infinite}
