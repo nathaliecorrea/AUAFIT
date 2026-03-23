@@ -504,6 +504,22 @@ html[lang="en"] .es{display:none!important}
 .sn{display:block;font-family:'Montserrat',sans-serif;font-size:2.8rem;font-weight:900;color:var(--blue-light);line-height:1;margin-bottom:12px}
 .stat p{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.55;letter-spacing:.01em}
 
+/* ══════════ CLOSING HERO — power-banner.jpg ══════════ */
+.closing-hero > img{
+  object-position:center 20%;
+  filter:contrast(1.05) saturate(1.06) brightness(.88)
+}
+/* Overlay: azul profundo arriba + negro en la base para legibilidad total */
+.closing-ov{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(0,10,30,.72) 0%,
+      rgba(0,20,55,.60) 30%,
+      rgba(0,10,30,.82) 70%,
+      rgba(0,5,18,.97) 100%)
+}
+
 /* ══════════ CLOSING ══════════ */
 .closing-lg{height:48px;width:auto;margin:0 auto;margin-bottom:32px}
 .closing-h{font-size:42px!important;font-weight:700!important;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.3!important;word-spacing:1px}
