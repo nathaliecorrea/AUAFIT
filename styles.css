@@ -486,6 +486,53 @@ html[lang="en"] .es{display:none!important}
 /* ══════════ AUAFIT SECTION ══════════ */
 .auafit-lg{height:44px;width:auto}
 .abs-lg{height:54px;width:auto;opacity:.75}
+
+/* ── Alliance block ── */
+.alliance-block{
+  text-align:center;
+  padding:48px 0 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  padding-bottom:64px;
+  margin-bottom:0
+}
+.alliance-label{
+  font-family:'Montserrat',sans-serif;
+  font-size:.60rem;font-weight:700;
+  letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(255,255,255,.35);
+  margin-bottom:36px;display:block
+}
+.alliance-logos{
+  display:flex;align-items:center;justify-content:center;
+  gap:40px;flex-wrap:wrap;
+  margin-bottom:28px
+}
+.alliance-logo{
+  height:auto;object-fit:contain;
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,.35));
+  transition:opacity .3s,transform .3s
+}
+.alliance-logo:hover{opacity:.85;transform:translateY(-2px)}
+.alliance-logo-auafit{
+  height:clamp(44px,5vw,64px);
+}
+.alliance-logo-abs{
+  height:clamp(36px,4vw,52px);
+  /* ABS logo puede tener fondo oscuro, aplicar filtro para versión clara */
+  filter:brightness(1) drop-shadow(0 2px 12px rgba(0,0,0,.35))
+}
+.alliance-x{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;font-weight:200;
+  color:rgba(255,255,255,.20);
+  line-height:1;user-select:none
+}
+.alliance-cert{
+  font-family:'Source Sans 3',sans-serif;
+  font-size:.92rem;color:rgba(255,255,255,.40);
+  letter-spacing:.02em;line-height:1.6em
+}
+.alliance-cert strong{color:var(--blue-light);font-weight:600}
 .diffs{display:flex;flex-direction:column;gap:20px}
 .dif{display:flex;gap:16px;align-items:flex-start}
 .dif-ck{
