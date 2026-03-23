@@ -3,19 +3,22 @@
    Colors: #003D7C navy · #008BD2 blue · #fff
    ═══════════════════════════════════ */
 
-/* ── Tokens ── */
+/* ── Tokens — Paleta oficial AUAFIT ── */
 :root {
-  --navy:   #003D7C;
-  --navy-d: #002A58;
-  --blue:   #008BD2;
-  --blue-d: #006FA8;
-  --blue-bg:#EBF5FB;
-  --blue-p: #F0F8FD;
-  --white:  #FFFFFF;
-  --gray-1: #F5F7FA;
-  --gray-2: #E8EEF4;
-  --text:   #1A2B3C;
-  --muted:  #506070;
+  --navy:      #003D7C;   /* azul marino oficial */
+  --navy-d:    #002A58;   /* marino profundo */
+  --blue:      #008BD2;   /* azul medio oficial */
+  --blue-d:    #006FA8;   /* azul medio oscuro */
+  --blue-light:#B6DCF1;   /* azul claro oficial — acentos/bordes */
+  --blue-pale: #D8E9F4;   /* azul pálido oficial — fondos */
+  --blue-bg:   #D8E9F4;   /* fondo chips y badges */
+  --blue-p:    #D8E9F4;   /* fondo secciones claras */
+  --white:     #FFFFFF;
+  --gray-1:    #F0F6FB;   /* fondo muy sutil */
+  --gray-2:    #B6DCF1;   /* borde azul suave */
+  --gray-med:  #878787;   /* gris oficial — texto leyendas */
+  --text:      #1C2B3A;   /* texto principal oscuro — legible sobre fondos blancos */
+  --muted:     #878787;   /* leyendas y subtextos: gris oficial AUAFIT */
   --r:  10px;
   --rl: 16px;
   --rx: 24px;
@@ -111,8 +114,13 @@ html[lang="en"] .es{display:none!important}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;transition:background .3s,box-shadow .3s,padding .3s}
 .nav.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 2px 20px rgba(0,61,124,.1);padding:9px 0}
 .nav-inner{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.nav-logo img{height:36px;width:auto;transition:filter .3s}
-.nav:not(.solid) .nav-logo img{filter:brightness(0) invert(1)}
+.nav-logo img{height:36px;width:auto;transition:opacity .25s}
+/* Logo blanco (negativo) visible sobre hero oscuro */
+.nav-logo .logo-white{display:block}
+.nav-logo .logo-color{display:none}
+/* Logo color visible sobre nav blanco */
+.nav.solid .nav-logo .logo-white{display:none}
+.nav.solid .nav-logo .logo-color{display:block}
 .nav-links{display:flex;gap:24px;align-items:center}
 .nav-links a{font-family:'Montserrat',sans-serif;font-size:.74rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
 .nav.solid .nav-links a{color:var(--navy)}
