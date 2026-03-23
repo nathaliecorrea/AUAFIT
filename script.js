@@ -84,4 +84,27 @@
     requestAnimationFrame(tick);
   }
 
+  /* ── Parallax: scene-bg ── */
+  const parallaxEl = document.querySelector('[data-parallax]');
+  if (parallaxEl && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+          const section = parallaxEl.closest('.scene-parallax');
+          if (section) {
+            const rect = section.getBoundingClientRect();
+            if (rect.bottom > 0 && rect.top < window.innerHeight) {
+              const offset = scrollY * 0.28;
+              parallaxEl.style.transform = `translateY(${offset}px)`;
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
 })();
