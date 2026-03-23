@@ -114,7 +114,7 @@ html[lang="en"] .es{display:none!important}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;transition:background .3s,box-shadow .3s,padding .3s}
 .nav.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 2px 20px rgba(0,61,124,.1);padding:9px 0}
 .nav-inner{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.nav-logo img{height:44px;width:auto;transition:opacity .25s}
+.nav-logo img{height:44px;width:auto;transition:opacity .25s;display:block}
 /* Nav transparente (hero oscuro): logo negativo blanco — visible sobre imagen oscura */
 .nav-logo .logo-white{display:block}
 .nav-logo .logo-color{display:none}
@@ -144,10 +144,10 @@ html[lang="en"] .es{display:none!important}
 .hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(36px,7vw,64px);font-weight:900;line-height:1.3;color:#fff;letter-spacing:2px;margin-bottom:36px}
 .hero-title em{display:block;color:#fff;font-style:normal}
 /* Logo AUAFIT en hero body — sin cápsula, como PNG directo */
-.hero-auafit-logo{margin-bottom:28px}
+.hero-auafit-logo{margin-bottom:24px;display:flex;justify-content:center}
 .hero-brand-logo{height:clamp(44px,6vw,72px);width:auto;margin:0 auto;display:block}
 /* Logo AquaBOARD — blanco sobre oscuro + tamaño Apple-scale */
-.hero-aquaboard-logo{height:clamp(90px,15vw,200px);width:auto;display:block;margin:0 auto .2em;filter:brightness(0) invert(1)}
+.hero-aquaboard-logo{height:clamp(90px,15vw,200px);width:auto;display:block;margin:0 auto .2em;filter:brightness(2.8) drop-shadow(0 2px 12px rgba(0,0,0,.5))}
 .hero-title-sub{display:block;font-weight:900;color:#fff;letter-spacing:2px}
 .hero-pill{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.25);backdrop-filter:blur(8px);padding:11px 24px;border-radius:50px;font-family:'Montserrat',sans-serif;font-size:clamp(.76rem,1.5vw,.94rem);font-weight:600;color:#fff;margin-bottom:32px}
 .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--blue);flex-shrink:0;box-shadow:0 0 0 3px rgba(0,139,210,.3);animation:pulse 2.2s ease-in-out infinite}
