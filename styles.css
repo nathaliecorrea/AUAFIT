@@ -206,9 +206,9 @@ html[lang="en"] .es{display:none!important}
 
 /* Logo AquaBOARD */
 .hero-aquaboard-logo{
-  height:clamp(120px,20vw,280px);width:auto;
-  display:block;margin:0 auto 16px;
-  filter:drop-shadow(0 6px 32px rgba(0,0,0,.65))
+  height:clamp(160px,26vw,360px);width:auto;
+  display:block;margin:0 auto 8px;
+  filter:drop-shadow(0 8px 40px rgba(0,0,0,.7))
 }
 
 /* Título hero: FESTIVAL, CARTAGENA */
@@ -414,7 +414,7 @@ html[lang="en"] .es{display:none!important}
 @media(max-width:480px){.closing-ctas{flex-direction:column;align-items:center}}
 
 /* ══════════ FOOTER ══════════ */
-.footer-logo{height:44px;width:auto;opacity:.92;filter:drop-shadow(0 1px 4px rgba(0,0,0,.3))}
+.footer-logo{height:56px;width:auto;opacity:.85;filter:drop-shadow(0 1px 8px rgba(0,0,0,.25))}
 .footer{background:var(--navy-d);padding:48px 0}
 .footer-inner{display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
 .footer-nav{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
