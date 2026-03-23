@@ -511,7 +511,7 @@ html[lang="en"] .es{display:none!important}
 }
 .ing-container{position:relative;z-index:2}
 .ing-section .sec-header{margin-bottom:64px}
-.ing-section .sec-header h2{color:#fff}
+.ing-section .sec-header h2{color:var(--blue-light)}
 .ing-section .sec-header h2 em{color:var(--blue-light)}
 .ing-section .sec-lead{max-width:640px;margin-top:18px}
 .ing-grid{
