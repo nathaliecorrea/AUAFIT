@@ -252,6 +252,8 @@ html[lang="en"] .es{display:none!important}
   position:relative;
   border-radius:25px;
   overflow:hidden;
+  /* clip-path bulletproof: garantiza bordes redondeados incluso con child transform:scale */
+  clip-path:inset(0 round 25px);
   /* Fuerza GPU compositing para que overflow:hidden respete el border-radius con transform */
   -webkit-mask-image:-webkit-radial-gradient(white,black);
   isolation:isolate;
