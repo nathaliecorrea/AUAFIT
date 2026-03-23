@@ -376,68 +376,18 @@ html[lang="en"] .es{display:none!important}
 }
 .fpill:hover{background:rgba(0,139,210,.28);border-color:rgba(0,139,210,.6)}
 
-/* ══════════ FESTIVAL FULL — foto única inmersiva ══════════ */
-.festival-full{
-  position:relative;
-  min-height:100vh;
-  display:flex;align-items:stretch;
-  overflow:hidden
-}
-.festival-full-bg{
-  position:absolute;inset:0;
-  width:100%;height:100%;
-  object-fit:cover;
-  object-position:center 40%;
-  display:block;
-  /* Micro boost de profundidad */
-  filter:contrast(1.04) saturate(1.08) brightness(.92);
-  transition:transform 10s ease;
-}
-.festival-full:hover .festival-full-bg{transform:scale(1.03)}
-/* Gradiente cinematográfico: visible arriba, denso abajo */
-.festival-full-ov{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(to bottom,
-      rgba(0,10,30,.55) 0%,
-      rgba(0,15,45,.45) 35%,
-      rgba(0,10,30,.72) 70%,
-      rgba(0,5,20,.95) 100%)
-}
-.festival-full-body{
-  position:relative;z-index:2;
-  display:flex;flex-direction:column;justify-content:space-between;
-  padding:100px 32px 80px;
-  width:100%;
-}
-.festival-content{max-width:680px}
-.festival-content .chip{margin-bottom:24px}
-
-/* Quote integrada al pie de la sección */
-.festival-quote{
-  margin-top:72px;
-  padding-top:40px;
-  max-width:800px;
-  margin-left:auto;margin-right:auto;
-  text-align:center
-}
-.festival-quote-line{
-  width:48px;height:1px;
-  background:rgba(255,255,255,.25);
-  margin:0 auto 32px;
-}
+/* ══════════ QUOTE ══════════ */
+.quotesec{position:relative;min-height:320px;display:flex;align-items:center;overflow:hidden}
+.quotesec>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.quotesec-ov{position:absolute;inset:0;background:rgba(0,16,44,.85)}
+.quotesec-body{position:relative;z-index:2;padding:72px 32px;text-align:center}
 .qt{
   font-family:'Montserrat',sans-serif;
   font-size:clamp(1.05rem,2.2vw,1.5rem);
   font-weight:300;font-style:italic;color:#fff;
   line-height:1.7;max-width:780px;margin:0 auto 18px
 }
-.qt strong{color:#fff;font-weight:600;font-style:normal}
 .qt-attr{font-family:'Montserrat',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-light)}
-@media(max-width:600px){
-  .festival-full-body{padding:80px 24px 60px}
-  .festival-quote{margin-top:48px}
-}
 
 /* ══════════ HOTEL ══════════ */
 .hotel-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
