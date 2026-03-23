@@ -414,6 +414,7 @@ html[lang="en"] .es{display:none!important}
 @media(max-width:480px){.closing-ctas{flex-direction:column;align-items:center}}
 
 /* ══════════ FOOTER ══════════ */
+.footer-logo{height:44px;width:auto;opacity:.92;filter:drop-shadow(0 1px 4px rgba(0,0,0,.3))}
 .footer{background:var(--navy-d);padding:48px 0}
 .footer-inner{display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
 .footer-nav{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
